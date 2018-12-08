@@ -1,0 +1,33 @@
+{
+  "devFiles": [],
+  "pages": {
+    "/dogs/_breed": [
+      "static/runtime/webpack-6530062b14e55a45eb85.js",
+      "static/chunks/commons.918cd5706d009742bc86.js",
+      "static/runtime/main-950a11520de61747c966.js"
+    ],
+    "/dogs": [
+      "static/runtime/webpack-6530062b14e55a45eb85.js",
+      "static/chunks/commons.918cd5706d009742bc86.js",
+      "static/runtime/main-950a11520de61747c966.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-6530062b14e55a45eb85.js",
+      "static/runtime/main-950a11520de61747c966.js"
+    ],
+    "/_app": [
+      "static/runtime/webpack-6530062b14e55a45eb85.js",
+      "static/chunks/commons.918cd5706d009742bc86.js",
+      "static/runtime/main-950a11520de61747c966.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-6530062b14e55a45eb85.js",
+      "static/chunks/commons.918cd5706d009742bc86.js",
+      "static/runtime/main-950a11520de61747c966.js"
+    ],
+    "/": [
+      "static/runtime/webpack-6530062b14e55a45eb85.js",
+      "static/runtime/main-950a11520de61747c966.js"
+    ]
+  }
+}
