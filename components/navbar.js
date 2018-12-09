@@ -2,6 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 
 export default () => (
+  <div></div>
+);
+/*
+old () => (
   <nav className='nav'>
     <ul>
       <li>
@@ -16,3 +20,4 @@ export default () => (
     </ul>
   </nav>
 )
+*/

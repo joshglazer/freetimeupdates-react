@@ -2,32 +2,34 @@
   "devFiles": [],
   "pages": {
     "/dogs/_breed": [
-      "static/runtime/webpack-6530062b14e55a45eb85.js",
-      "static/chunks/commons.918cd5706d009742bc86.js",
-      "static/runtime/main-950a11520de61747c966.js"
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.e050b8eef95025ba1d37.js",
+      "static/runtime/main-91e6a2a8a98ad70dd6ec.js"
     ],
     "/dogs": [
-      "static/runtime/webpack-6530062b14e55a45eb85.js",
-      "static/chunks/commons.918cd5706d009742bc86.js",
-      "static/runtime/main-950a11520de61747c966.js"
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.e050b8eef95025ba1d37.js",
+      "static/runtime/main-91e6a2a8a98ad70dd6ec.js"
     ],
     "/index": [
-      "static/runtime/webpack-6530062b14e55a45eb85.js",
-      "static/runtime/main-950a11520de61747c966.js"
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.e050b8eef95025ba1d37.js",
+      "static/runtime/main-91e6a2a8a98ad70dd6ec.js"
     ],
     "/_app": [
-      "static/runtime/webpack-6530062b14e55a45eb85.js",
-      "static/chunks/commons.918cd5706d009742bc86.js",
-      "static/runtime/main-950a11520de61747c966.js"
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.e050b8eef95025ba1d37.js",
+      "static/runtime/main-91e6a2a8a98ad70dd6ec.js"
     ],
     "/_error": [
-      "static/runtime/webpack-6530062b14e55a45eb85.js",
-      "static/chunks/commons.918cd5706d009742bc86.js",
-      "static/runtime/main-950a11520de61747c966.js"
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.e050b8eef95025ba1d37.js",
+      "static/runtime/main-91e6a2a8a98ad70dd6ec.js"
     ],
     "/": [
-      "static/runtime/webpack-6530062b14e55a45eb85.js",
-      "static/runtime/main-950a11520de61747c966.js"
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.e050b8eef95025ba1d37.js",
+      "static/runtime/main-91e6a2a8a98ad70dd6ec.js"
     ]
   }
 }

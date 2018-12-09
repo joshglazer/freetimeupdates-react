@@ -3,25 +3,26 @@
     "byIdentifier": {
       "external \"react\"": 0,
       "external \"@babel/runtime/regenerator\"": 1,
-      "external \"next/link\"": 2,
-      "external \"axios\"": 3,
-      "external \"next/head\"": 4,
-      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!layouts/default.js de5d8e0597259d9a21b1d73a9755a802": 5,
-      "multi ./pages/dogs/_breed.js": 6,
-      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/dogs/_breed.js": 7,
-      "multi ./pages/dogs/index.js": 8,
-      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/dogs/index.js": 9,
-      "multi ./pages/index.js": 10,
-      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/index.js": 11,
-      "multi node_modules/next/dist/pages/_app.js": 12,
-      "node_modules/next/dist/pages/_app.js": 13,
-      "external \"next/app\"": 14,
-      "multi node_modules/next/dist/pages/_error.js": 15,
-      "node_modules/next/dist/pages/_error.js": 16,
-      "external \"next/error\"": 17,
-      "multi node_modules/next/dist/pages/_document.js": 18,
-      "node_modules/next/dist/pages/_document.js": 19,
-      "external \"next/document\"": 20
+      "external \"styled-jsx/style\"": 2,
+      "external \"next/head\"": 3,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!layouts/default.js 6729087156b9de76228734d9f640b675": 4,
+      "external \"axios\"": 5,
+      "external \"next/link\"": 6,
+      "multi ./pages/dogs/_breed.js": 7,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/dogs/_breed.js": 8,
+      "multi ./pages/dogs/index.js": 9,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/dogs/index.js": 10,
+      "multi ./pages/index.js": 11,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/index.js": 12,
+      "multi node_modules/next/dist/pages/_app.js": 13,
+      "node_modules/next/dist/pages/_app.js": 14,
+      "external \"next/app\"": 15,
+      "multi node_modules/next/dist/pages/_error.js": 16,
+      "node_modules/next/dist/pages/_error.js": 17,
+      "external \"next/error\"": 18,
+      "multi node_modules/next/dist/pages/_document.js": 19,
+      "node_modules/next/dist/pages/_document.js": 20,
+      "external \"next/document\"": 21
     },
     "usedIds": {
       "0": 0,
@@ -44,17 +45,18 @@
       "17": 17,
       "18": 18,
       "19": 19,
-      "20": 20
+      "20": 20,
+      "21": 21
     }
   },
   "chunks": {
     "byName": {
-      "static/VfmqAsFa9EC_4l8Z5ONyP/pages/dogs/_breed.js": 0,
-      "static/VfmqAsFa9EC_4l8Z5ONyP/pages/dogs.js": 1,
-      "static/VfmqAsFa9EC_4l8Z5ONyP/pages/index.js": 2,
-      "static/VfmqAsFa9EC_4l8Z5ONyP/pages/_app.js": 3,
-      "static/VfmqAsFa9EC_4l8Z5ONyP/pages/_error.js": 4,
-      "static/VfmqAsFa9EC_4l8Z5ONyP/pages/_document.js": 5
+      "static/KafAVIzySHnVTvm0W3fNg/pages/dogs/_breed.js": 0,
+      "static/KafAVIzySHnVTvm0W3fNg/pages/dogs.js": 1,
+      "static/KafAVIzySHnVTvm0W3fNg/pages/index.js": 2,
+      "static/KafAVIzySHnVTvm0W3fNg/pages/_app.js": 3,
+      "static/KafAVIzySHnVTvm0W3fNg/pages/_error.js": 4,
+      "static/KafAVIzySHnVTvm0W3fNg/pages/_document.js": 5
     },
     "bySource": {},
     "usedIds": [
