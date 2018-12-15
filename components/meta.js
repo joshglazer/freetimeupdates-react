@@ -7,14 +7,7 @@ export default ({ props = { title, description } }) => (
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <meta charSet='utf-8' />
       <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet" />
     </Head>
-    <style jsx global>{`
-      body {
-        background: #0946ff;
-        font-family: 'Nunito', sans-serif;
-        color: #ece87a;
-        text-shadow: #000 1px 0 10px;
-      }
-    `}</style>
   </div>
 )

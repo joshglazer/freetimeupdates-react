@@ -7,18 +7,14 @@ class IndexPage extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      curTime: this.getDate(),
+      curTime: null,
     }
   }
 
   setDate() {
     this.setState({
-      curTime : this.getDate(),
+      curTime : new Date().toLocaleString()
     })
-  }
-
-  getDate() {
-    return new Date().toLocaleTimeString();
   }
 
   componentDidMount () {
@@ -32,9 +28,8 @@ class IndexPage extends React.Component {
   render () {
     return (
       <Default meta={meta}>
-        <div className="homepageTime">
-          <div className="homepageTimeTitle">Right now it is</div>
-          <div className="homepageTimeTime">{this.state.curTime}</div>
+        <div>
+          <p>Contact Page Goes Here!</p>
         </div>
       </Default>
     )

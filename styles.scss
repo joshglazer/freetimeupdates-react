@@ -1,0 +1,70 @@
+$font-size: 50px;
+$blue: #0946ff;
+$yellow: #faf06b;
+$shadow: #000 1px 0 10px;
+$nunito: 'Nunito', sans-serif;
+$luckiest-guy: 'Luckiest Guy', cursive;
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  background: $blue;
+  font-family: $nunito;
+  color: $yellow;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+header {
+  background-color: $yellow;
+  color: $blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+footer {
+  background-color: $yellow;
+  color: $blue;
+  text-align: center;
+  padding: 0.5em;
+}
+
+h1 {
+  display: none;
+}
+
+nav {
+  font-family: $luckiest-guy;
+  font-size: 40px;
+}
+
+nav li {
+  display: inline;
+  padding-right: 20px;
+}
+
+nav li a {
+  color: $blue;
+  text-decoration: none;
+}
+
+.homepageTime {
+  font-size: 2em;
+  text-align: center;
+}
+
+.homepageTimeTime {
+  font-size: 2em;
+}
