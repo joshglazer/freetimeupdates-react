@@ -8,10 +8,10 @@ import Footer from '../components/footer'
 import "../styles.scss"
 
 export default ({ children, meta }) => (
-  <div>
+  <div id="outer-container">
     <Meta props={meta} />
     <Menu />
-    <div className="body">
+    <div className="body" id="page-wrap">
       <header>
         <Logo />
         <Header />

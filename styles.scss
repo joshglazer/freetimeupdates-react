@@ -87,19 +87,19 @@ section {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: $blue;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: $yellow;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #373a47;
+  fill: $yellow;
 }
 
 /* Wrapper for item list */
