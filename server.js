@@ -10,6 +10,8 @@ const { parse } = require('url')
 const server = express()
 const route = pathMatch()
 server.use('/_next', express.static(path.join(__dirname, '.next')))
+server.get('/', (req, res) => app.render(req, res, '/'))
+server.get('/contact', (req, res) => app.render(req, res, '/contact'))
 server.get('*', (req, res) => handle(req, res))
 
 module.exports = server
