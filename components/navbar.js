@@ -8,6 +8,9 @@ export default () => (
         <Link href='/'>Home</Link>
       </li>
       <li>
+        <a href='https://twitter.com/freetimeupdates' target='_blank'>Twitter</a>
+      </li>
+      <li>
         <Link href='/contact'>Contact</Link>
       </li>
     </ul>
