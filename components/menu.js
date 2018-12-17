@@ -4,8 +4,8 @@ import { elastic as Menu } from 'react-burger-menu'
 
 export default () => (
   <Menu right pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
-    <Link className="menu-item" href='/'>Home</Link>
+    <Link href='/'><a className="menu-item">Home</a></Link>
     <a href='https://twitter.com/freetimeupdates' target='_blank'>Twitter</a>
-    <Link className="menu-item" href='/contact'>Contact</Link>
+    <Link href='/contact'><a className="menu-item">Contact</a></Link>
   </Menu>
 );

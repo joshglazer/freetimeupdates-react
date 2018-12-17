@@ -18,7 +18,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 a:hover {
@@ -63,6 +63,23 @@ section {
 
 .homepageTimeTime {
   font-size: 2em;
+}
+
+.formField {
+  margin: 1em 0;
+  input, textarea {
+    font-size: 1em;
+    border: 4px solid $yellow;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  input[type=submit] {
+    width: auto;
+    padding: 10px 40px;
+    background-color: $yellow;
+    color: $blue;
+  }
 }
 
 /* Position and sizing of burger button */
