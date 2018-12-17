@@ -24,6 +24,13 @@ provider:
   region: us-east-1
   environment:
     NODE_ENV: ${self:custom.secrets.NODE_ENV}
+    EMAIL: ${self:custom.secrets.EMAIL}
+    DOMAIN: ${self:custom.secrets.DOMAIN}
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "ses:SendEmail"
+      Resource: "*"
 
 # you can overwrite defaults here
 #  stage: dev
@@ -64,7 +71,13 @@ functions:
     events:
       - http: ANY /
       - http: ANY /{proxy+}
-
+  send:
+    handler: handler.send
+    events:
+      - http:
+          path: email/send
+          method: post
+          cors: true
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
