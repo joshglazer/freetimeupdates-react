@@ -1,6 +1,8 @@
 import React from 'react'
 import Default from '../layouts/default'
 import axios from 'axios'
+import { toast } from 'react-toastify';
+
 const meta = {  }
 
 class IndexPage extends React.Component {
@@ -17,7 +19,7 @@ class IndexPage extends React.Component {
 
   setDate() {
     this.setState({
-      curTime : new Date().toLocaleString(),
+      curTime : new Date().toLocaleTimeString(),
     })
   }
 
@@ -30,17 +32,46 @@ class IndexPage extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    axios.post('/email/send', {
-      name: this.state.name,
-      email: this.state.email,
-      content: this.state.content,
-    })
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+    const {name, email, content} = this.state;
+    let errors = [];
+    if (!name) {
+      errors.push('Name is required')
+    }
+    if (!email) {
+      errors.push('Email is required')
+    }
+    if (!content) {
+      errors.push('Your message is required')
+    }
+    if (errors.length) {
+      errors.map((item) => {
+        toast.error(item, {
+          position: toast.POSITION.TOP_CENTER
+        });
+      })
+    } else {
+      axios.post('/email/send', {
+        name: name,
+        email: email,
+        content: content,
+      })
+      .then(function (response) {
+        toast.success("Thanks for getting in touch!  We'll get back to you soon.", {
+          position: toast.POSITION.TOP_CENTER
+        });
+        this.setState({
+          name: '',
+          email: '',
+          content: '',
+        })
+      })
+      .catch(function (error) {
+        console.log(error);
+        toast.error("Your information could not be sent.  Please try again.", {
+          position: toast.POSITION.TOP_CENTER
+        });
+      });
+    }
   }
 
 
