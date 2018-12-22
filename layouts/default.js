@@ -8,6 +8,7 @@ import Menu from '../components/menu'
 import Footer from '../components/footer'
 
 import "react-toastify/dist/ReactToastify.css";
+import 'react-block-ui/style.css';
 import "../styles.scss"
 
 export default ({ children, meta }) => (
