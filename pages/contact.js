@@ -30,7 +30,7 @@ class IndexPage extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    axios.post('https://yfmuklkatb.execute-api.us-east-1.amazonaws.com/production/email/send', {
+    axios.post('/email/send', {
       name: this.state.name,
       email: this.state.email,
       content: this.state.content,

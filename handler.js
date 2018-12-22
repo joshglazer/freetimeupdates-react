@@ -42,8 +42,8 @@ function generateError (code, err) {
   }
 }
 
-function generateEmailParams (body) {
-  const { email, name, content } = JSON.parse(body)
+function generateEmailParams(body) {
+  const { email, name, content } = body
   console.log(email, name, content)
   if (!(email && name && content)) {
     throw new Error('Missing parameters! Make sure to add parameters \'email\', \'name\', \'content\'.')
@@ -70,7 +70,7 @@ function generateEmailParams (body) {
 
 module.exports.send = async (event) => {
   try {
-    const emailParams = generateEmailParams(event.body)
+    const emailParams = generateEmailParams(event)
     const data = await ses.sendEmail(emailParams).promise()
     return generateResponse(200, data)
   } catch (err) {
