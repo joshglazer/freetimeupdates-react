@@ -23,11 +23,14 @@ class IndexPage extends React.Component {
 
   componentDidMount () {
     this.setDate();
-    setInterval( () => {
+    this.myInterval = setInterval( () => {
       this.setDate();
     },1000)
   }
 
+  componentWillUnmount(){
+    clearInterval(this.myInterval);
+  }
 
   render () {
     return (

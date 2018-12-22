@@ -10,7 +10,7 @@ class IndexPage extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      curTime: null,
+      curTime: this.getDate(),
       name: "",
       email: "",
       content: "",
@@ -21,16 +21,24 @@ class IndexPage extends React.Component {
 
   setDate() {
     this.setState({
-      curTime : new Date().toLocaleTimeString(),
+      curTime : this.getDate(),
     })
+  }
+
+  getDate() {
+    return new Date().toLocaleTimeString();
   }
 
   componentDidMount () {
     this.setDate();
-    setInterval( () => {
+    this.myInterval = setInterval( () => {
       this.setDate();
     },1000)
   }
+
+  componentWillUnmount(){
+   clearInterval(this.myInterval);
+ }
 
   handleSubmit(event) {
     event.preventDefault();
