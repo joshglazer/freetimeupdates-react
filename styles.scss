@@ -126,6 +126,9 @@ section {
 .bm-item-list {
   color: #b8b7ad;
   padding: 0.8em;
+  a {
+    display: block;
+  }
 }
 
 /* Individual item */
