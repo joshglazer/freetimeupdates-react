@@ -80,6 +80,9 @@ section {
     background-color: $yellow;
     color: $blue;
   }
+  &.formFieldRecaptcha div{
+    margin: 0 auto;
+  }
 }
 
 /* Position and sizing of burger button */

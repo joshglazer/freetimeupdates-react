@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Default from '../layouts/default'
+
 import axios from 'axios'
 import { toast } from 'react-toastify';
 import BlockUi from 'react-block-ui';
+import ReCAPTCHA from "react-google-recaptcha";
 
 const meta = {  }
 
-class IndexPage extends React.Component {
+class IndexPage extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -14,9 +16,11 @@ class IndexPage extends React.Component {
       name: "",
       email: "",
       content: "",
+      recaptchaValid: false,
       blocking: false,
     }
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.onChangeRecaptcha = this.onChangeRecaptcha.bind(this);
   }
 
   setDate() {
@@ -37,12 +41,16 @@ class IndexPage extends React.Component {
   }
 
   componentWillUnmount(){
-   clearInterval(this.myInterval);
- }
+    clearInterval(this.myInterval);
+  }
+
+  onChangeRecaptcha(value) {
+    this.setState({recaptchaValid: true});
+  }
 
   handleSubmit(event) {
     event.preventDefault();
-    const {name, email, content} = this.state;
+    const {name, email, content, recaptchaValid} = this.state;
     let errors = [];
     if (!name) {
       errors.push('Name is required')
@@ -52,6 +60,9 @@ class IndexPage extends React.Component {
     }
     if (!content) {
       errors.push('Your message is required')
+    }
+    if (!recaptchaValid) {
+      errors.push('Check the checkbox to prove that you aren\'t a robot')
     }
     const self = this;
     if (errors.length) {
@@ -128,6 +139,12 @@ class IndexPage extends React.Component {
                   rows="3"
                   value={this.state.content}
                   onChange={event => this.setState({content: event.target.value})}
+                />
+              </div>
+              <div className="formField formFieldRecaptcha">
+                <ReCAPTCHA
+                  sitekey="6LdKX4QUAAAAAEO-Ee78CzoQ8Jbx9gw0mWd1eL3y"
+                  onChange={this.onChangeRecaptcha}
                 />
               </div>
               <div className="formField">
