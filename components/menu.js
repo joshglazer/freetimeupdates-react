@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import { elastic as Menu } from 'react-burger-menu'
+import { stack as Menu } from 'react-burger-menu'
 
 export default () => (
   <Menu right pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
-    <Link href='/'><a className="menu-item">Home</a></Link>
-    <Link href='/research'><a className="menu-item">Research</a></Link>
-    <a href='https://twitter.com/freetimeupdates' target='_blank'>Twitter</a>
-    <Link href='/contact'><a className="menu-item">Contact</a></Link>
+    <div><Link href='/'><a>Home</a></Link></div>
+    <div><Link href='/research'><a>Research</a></Link></div>
+    <div><a href='https://twitter.com/freetimeupdates' target='_blank'>Twitter</a></div>
+    <div><Link href='/contact'><a>Contact</a></Link></div>
   </Menu>
 );
