@@ -2,8 +2,7 @@ $font-size: 50px;
 $blue: #0946ff;
 $yellow: #faf06b;
 $shadow: #000 1px 0 10px;
-$nunito: 'Nunito', sans-serif;
-$luckiest-guy: 'Luckiest Guy', cursive;
+$rubik: 'Rubik', sans-serif;
 
 html, body {
   padding: 0;
@@ -12,7 +11,7 @@ html, body {
 
 .body {
   background: $blue;
-  font-family: $nunito;
+  font-family: $rubik;
   color: $yellow;
   padding: 0;
   display: flex;
@@ -47,7 +46,7 @@ h1 {
 }
 
 nav {
-  font-family: $luckiest-guy;
+  font-family: $rubik;
   font-size: 40px;
 }
 

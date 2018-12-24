@@ -125,7 +125,7 @@ class IndexPage extends Component {
                   type="text"
                   name="email"
                   id="email"
-                  placeholder="Your email address"
+                  placeholder="Your email"
                   value={this.state.email}
                   onChange={event => this.setState({email: event.target.value})}
                 />
