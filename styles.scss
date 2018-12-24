@@ -61,8 +61,11 @@ section {
   text-align: center;
 }
 
-.homepageTimeTime {
-  font-size: 2em;
+.homepageTime {
+  margin-top: 1em;
+  .homepageTimeTime {
+    font-size: 1.5em;
+  }
 }
 
 .formField {

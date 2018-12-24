@@ -8,6 +8,7 @@ export default ({ props = { title, description } }) => (
       <meta charSet='utf-8' />
       <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet" />
+      <link rel="shortcut icon" href="/static/favicon.ico" type="image/vnd.microsoft.icon" />
     </Head>
   </div>
 )
