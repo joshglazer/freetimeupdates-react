@@ -20,8 +20,11 @@ html, body {
   min-height: 100vh;
 }
 
-a:hover {
-  opacity: 0.75;
+a {
+  color: $yellow;
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 header {
@@ -86,6 +89,38 @@ section {
     margin: 0 auto;
   }
 }
+
+/*************************
+ *
+ * React Chart Styles
+ *
+ *************************/
+
+.researchChart {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  .bar {
+    fill: $yellow !important;
+  }
+  .tick text {
+    fill: $yellow;
+  }
+  .label {
+    fill: $yellow;
+  }
+  .tick-circle {
+    visibility: hidden;
+  }
+  .pie-chart-label {
+    font-size: 1em !important;
+  }
+}
+
+/*************************
+ *
+ * Burger Menu Styles
+ *
+ *************************/
 
 /* Position and sizing of burger button */
 .bm-burger-button {
