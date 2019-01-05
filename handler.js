@@ -79,3 +79,12 @@ module.exports.send = async (event) => {
     return generateError(500, err)
   }
 }
+
+module.exports.getTweet = async(event) => {
+  try {
+    const data = "test";
+    return generateResponse(200, data);
+  } catch (err) {
+    return generateError(500, err)
+  }
+}
