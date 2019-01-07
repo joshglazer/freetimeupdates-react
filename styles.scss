@@ -48,6 +48,10 @@ h1 {
   display: none;
 }
 
+h2 {
+  margin-top: 0;
+}
+
 nav {
   font-family: $rubik;
   font-size: 40px;
@@ -61,12 +65,28 @@ nav a {
 section {
   font-size: 2em;
   text-align: center;
+  padding: 1em;
 }
 
 .homepageTime {
   margin-top: 1em;
   .homepageTimeTime {
     font-size: 1.5em;
+  }
+}
+
+.SocialMediaShareButtons {
+  margin-top: 1em;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: $yellow;
+  color: $blue;
+  border-radius: 15px;
+  .SocialMediaShareButton {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
   }
 }
 

@@ -25,6 +25,7 @@
     "react-dom": "^16.6.3",
     "react-easy-chart": "^1.0.0",
     "react-google-recaptcha": "^1.0.5",
+    "react-share": "^2.4.0",
     "react-toastify": "^4.5.1",
     "serverless-apigw-binary": "^0.4.4",
     "serverless-domain-manager": "^2.6.6",
