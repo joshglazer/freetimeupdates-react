@@ -79,13 +79,13 @@ class IndexPage extends React.Component {
                   url={window.location.href}
                   via="FreeTimeUpdates"
                 >
-                  <TwitterIcon size={32} round={true} />
+                  <TwitterIcon size={24} round={true} />
                 </TwitterShareButton>
                 <FacebookShareButton
                   quote={this.state.tweetWithTime}
                   url={window.location.href}
                 >
-                  <FacebookIcon size={32} round={true} />
+                  <FacebookIcon size={24} round={true} />
                 </FacebookShareButton>
               </div>
             }

@@ -35,6 +35,9 @@ header {
   align-items: center;
   padding: 10px;
   min-height: 85px;
+  .logo img {
+    max-height: 80px;
+  }
 }
 
 footer {
@@ -77,6 +80,7 @@ section {
 
 .SocialMediaShareButtons {
   margin-top: 1em;
+  font-size: 0.5em;
   font-weight: bold;
   display: inline-block;
   padding: 0.5em 1em;
@@ -182,16 +186,17 @@ section {
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  padding: 0.8em;
-  a {
-    display: block;
+  .bm-item {
+    display: inline-block;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    a {
+      display: block;
+    }
   }
 }
 
 /* Individual item */
-.bm-item {
-  display: inline-block;
-}
 
 /* Styling of overlay */
 .bm-overlay {
