@@ -1,10 +1,40 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 
-import { BarChart, PieChart } from 'react-easy-chart';
+import { Chart } from 'react-google-charts';
 
 import Default from '../layouts/default'
 const meta = {  }
+const options = {
+  colors: ['#faf06b', '#bfdef2'],
+  is3D: true,
+  backgroundColor: 'transparent',
+  vAxis: {
+    gridlines: {
+        color: 'transparent'
+    },
+    baselineColor: '#faf06b',
+    textStyle:{color: '#faf06b'},
+  },
+  hAxis: {
+    gridlines: {
+        color: 'transparent'
+    },
+    baselineColor: '#faf06b',
+    textStyle:{color: '#faf06b'},
+  },
+  pieSliceTextStyle: {
+    color: 'black',
+  },
+  tooltip: {
+    isHtml: true
+  },
+  legend: {
+    textStyle: {
+      color: '#faf06b'
+    }
+  },
+}
 
 class ResearchPage extends Component {
 
@@ -20,49 +50,52 @@ class ResearchPage extends Component {
           </div>
           <div className="researchChart">
             <h3>The time of day based on how many hours have passed</h3>
-            <BarChart
-              axisLabels={{
-                x: 'Hours Passed in the day',
-                y: 'Time of Day'
-              }}
-              axes
-              height={250}
-              width={650}
+            <Chart
+              chartType="ColumnChart"
+              height={400}
+              width={"100%"}
+              legendToggle
+              options={options}
               data={[
-                {x: '0', y: 12},
-                {x: '1', y: 1},
-                {x: '2', y: 2},
-                {x: '3', y: 3},
-                {x: '4', y: 4},
-                {x: '5', y: 5},
-                {x: '6', y: 6},
-                {x: '7', y: 7},
-                {x: '8', y: 8},
-                {x: '9', y: 9},
-                {x: '10', y: 10},
-                {x: '11', y: 11},
-                {x: '12', y: 12},
-                {x: '13', y: 1},
-                {x: '14', y: 2},
-                {x: '15', y: 3},
-                {x: '16', y: 4},
-                {x: '17', y: 5},
-                {x: '18', y: 6},
-                {x: '19', y: 7},
-                {x: '20', y: 8},
-                {x: '21', y: 9},
-                {x: '22', y: 10},
-                {x: '23', y: 11},
+                ['Hours Passed in the day', 'Time of Day'],
+                ['0', 12],
+                ['1', 1],
+                ['2', 2],
+                ['3', 3],
+                ['4', 4],
+                ['5', 5],
+                ['6', 6],
+                ['7', 7],
+                ['8', 8],
+                ['9', 9],
+                ['10', 10],
+                ['11', 11],
+                ['12', 12],
+                ['13', 1],
+                ['14', 2],
+                ['15', 3],
+                ['16', 4],
+                ['17', 5],
+                ['18', 6],
+                ['19', 7],
+                ['20', 8],
+                ['21', 9],
+                ['22', 10],
+                ['23', 11],
               ]}
             />
           </div>
           <div className="researchChart">
             <h3>Percentage of time of day during AM vs. PM</h3>
-            <PieChart
-              labels
+            <Chart
+              chartType="PieChart"
+              height={400}
+              width={"100%"}
+              options={options}
               data={[
-                { key: 'AM', value: 12 },
-                { key: 'PM', value: 12 },
+                ['Type', 'Percent'],
+                ['AM', 12],
+                ['PM', 12],
               ]}
             />
           </div>
