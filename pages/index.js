@@ -4,7 +4,7 @@ import { FacebookIcon, FacebookShareButton, TwitterIcon, TwitterShareButton } fr
 
 import Default from '../layouts/default'
 
-const meta = {  }
+const meta = { }
 
 class IndexPage extends React.Component {
   constructor (props) {

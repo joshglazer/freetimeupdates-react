@@ -4,7 +4,12 @@ import Link from 'next/link'
 import { Chart } from 'react-google-charts';
 
 import Default from '../layouts/default'
-const meta = {  }
+
+const meta = {
+  title: 'Research',
+  description: 'Our time scientists are hard at work performing cutting-edge time research about time. We have made our research available for you to review.'
+}
+
 const optionsBase = {
   colors: ['#faf06b', '#bfdef2'],
   backgroundColor: 'transparent',

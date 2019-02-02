@@ -6,7 +6,9 @@ import { toast } from 'react-toastify';
 import BlockUi from 'react-block-ui';
 import ReCAPTCHA from "react-google-recaptcha";
 
-const meta = {  }
+const meta = {
+  title: 'Contact',
+}
 
 class IndexPage extends Component {
   constructor (props) {
