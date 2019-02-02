@@ -7,3 +7,6 @@ jspm_packages
 
 # Compiled next files
 .next
+
+# Configurations
+secrets.json
