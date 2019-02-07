@@ -65,7 +65,6 @@ class IndexPage extends React.Component {
   render () {
     return (
       <Default meta={meta}>
-        <h2>Welcome to Free Time Updates</h2>
         <div>Are you tired of paying top dollar for your time updates? Check here for free time updates, all the time, every time.</div>
         {this.state.curTime &&
           <div className="homepageTime">
