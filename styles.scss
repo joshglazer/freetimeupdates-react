@@ -43,6 +43,10 @@ header {
     margin: 0;
     padding-left: 30px;
     font-size: 3em;
+    padding-right: 80px;
+    @media only screen and (max-width: 767px) {
+      font-size: 2em;
+    }
   }
 }
 
