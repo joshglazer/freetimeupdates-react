@@ -16,7 +16,7 @@
     "@zeit/next-sass": "^1.0.1",
     "axios": "^0.19.2",
     "express": "^4.17.1",
-    "next": "^9.5.2",
+    "next": "^9.5.3",
     "node-sass": "^4.14.1",
     "path-match": "^1.2.4",
     "react": "^16.13.1",
