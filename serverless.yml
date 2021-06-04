@@ -19,7 +19,7 @@ service: freetimeupdates-react # NOTE: update this with your service name
 
 provider:
   name: aws
-  runtime: nodejs10.x
+  runtime: nodejs12.x
   stage: ${self:custom.secrets.NODE_ENV}
   region: us-east-1
   environment:
@@ -137,10 +137,10 @@ custom:
   secrets: ${file(secrets.json)}
   apigwBinary:
     types:
-      - '*/*'
+      - "*/*"
   customDomain:
     domainName: ${self:custom.secrets.DOMAIN}
-    basePath: ''
+    basePath: ""
     stage: ${self:custom.secrets.NODE_ENV}
     createRoute53Record: true
     # endpointType: 'regional'
