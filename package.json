@@ -4,6 +4,7 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
+    "start": "npm run run",
     "run": "next",
     "build": "next build",
     "deploy": "next build && sls deploy"
