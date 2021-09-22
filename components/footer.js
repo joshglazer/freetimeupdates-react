@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export default () => (
+const footer = () => (
   <footer>
     <div>&copy; {new Date().getFullYear()} FreeTimeUpdates.com</div>
   </footer>
-)
+);
+
+export default footer;
